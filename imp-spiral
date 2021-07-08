@@ -1,0 +1,13 @@
+;name Imp Spiral
+stp: equ 1600
+     ORG 1
+     MOV 0, 1
+     spl <a
+a:   MOV z, stp
+     spl <b
+b:   MOV z, 2*stp
+     spl <c
+c:   MOV z, 3*stp
+     spl <d
+d:   MOV z, 4*stp
+     jmp z
