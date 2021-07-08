@@ -1,0 +1,11 @@
+;name Bomber
+ORG 2
+c: equ 6
+d: equ 7
+z: add #c, a
+   sub #d, b
+   mov a, @a
+   mob b, @b
+   jmp z
+a: dat 123, 0
+b: dat 123, 0
